@@ -3,12 +3,14 @@ import { createContext, useState, useEffect } from "react";
 const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
+
   const [user, setUser] = useState(null);
 
+  // Restore user on refresh
   useEffect(() => {
-    const storedUser = localStorage.getItem("doctalkUser");
+    const storedUser = JSON.parse(localStorage.getItem("user"));
     if (storedUser) {
-      setUser(JSON.parse(storedUser));
+      setUser(storedUser);
     }
   }, []);
 
@@ -19,14 +21,14 @@ const AuthProvider = ({ children }) => {
       role = "doctor";
     }
 
-    const fakeUser = { email, role };
+    const userData = { email, role };
 
-    localStorage.setItem("doctalkUser", JSON.stringify(fakeUser));
-    setUser(fakeUser);
+    setUser(userData);
+    localStorage.setItem("user", JSON.stringify(userData));
   };
 
   const logout = () => {
-    localStorage.removeItem("doctalkUser");
+    localStorage.removeItem("user");   // ✅ FIXED
     setUser(null);
   };
 
