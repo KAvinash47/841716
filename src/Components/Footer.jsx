@@ -25,9 +25,9 @@ const Footer = () => {
                     {/* Social Media Icons */}
                     <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-gray-600 items-center">
                         <a href="https://web.facebook.com" target='_blank' className="hover:text-blue-600"><FaFacebook size={24} /></a>
-                        <a href="https://github.com" target='_blank' className="hover:text-blue-600"><FaGithub size={24} /></a>
-                        <a href="https://www.linkedin.com" target='_blank' className="hover:text-blue-600"><FaLinkedin size={24} /></a>
-                        <a href="https://www.instagram.com/" target='_blank' className="hover:text-blue-600"><FaInstagram size={24} /></a>
+                        <a href="https://github.com/KAvinash47" target='_blank' className="hover:text-blue-600"><FaGithub size={24} /></a>
+                        <a href="https://www.linkedin.com/in/avinash-kumar-1b4412329/" target='_blank' className="hover:text-blue-600"><FaLinkedin size={24} /></a>
+                        <a href="https://www.instagram.com/avinash_._404/" target='_blank' className="hover:text-blue-600"><FaInstagram size={24} /></a>
                     </div>
                 </div>
             </div>

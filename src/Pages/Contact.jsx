@@ -26,7 +26,7 @@ const Contact = () => {
 
           <div className="space-y-4 text-gray-600">
             <p><strong>📍 Address:</strong> Jaipur, Rajasthan, India</p>
-            <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+            <p><strong>📞 Phone:</strong> +91 7976739844</p>
             <p><strong>📧 Email:</strong> support@doctalk.com</p>
             <p><strong>⏰ Working Hours:</strong> Mon - Sat (9AM - 7PM)</p>
           </div>
